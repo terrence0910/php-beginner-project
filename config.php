@@ -90,7 +90,9 @@ function sanitize_input($input) {
     $input = trim($input);
     
     // stripslashes() removes backslashes (if they exist)
-    if (get_magic_quotes_gpc()) {
+    // get_magic_quotes_gpc() was removed in modern PHP versions,
+    // so we check if the function exists first for compatibility.
+    if (function_exists('get_magic_quotes_gpc') && get_magic_quotes_gpc()) {
         $input = stripslashes($input);
     }
     
@@ -490,7 +492,7 @@ function is_logged_in() {
 }
 
 /**
- * Function: get_current_user()
+ * Function: get_logged_in_user()
  * 
  * Purpose: Get the currently logged-in user's data
  * WHY: Need user info on every page (name, email, preferences, etc.)
@@ -502,12 +504,12 @@ function is_logged_in() {
  *   (array) - Current user data, or null if not logged in
  * 
  * Example:
- *   $user = get_current_user();
+ *   $user = get_logged_in_user();
  *   if ($user) {
  *       echo "Welcome, " . escape_output($user['username']);
  *   }
  */
-function get_current_user() {
+function get_logged_in_user() {
     // Check if user is logged in
     if (!is_logged_in()) {
         return null;
