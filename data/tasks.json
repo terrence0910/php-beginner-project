@@ -1,0 +1,65 @@
+[
+  {
+    "id": "task-001",
+    "user_id": "user-001",
+    "title": "Learn PHP Variables",
+    "description": "Study PHP variables, data types, and basic operations",
+    "status": "completed",
+    "created_at": "2024-01-10T08:30:00Z",
+    "updated_at": "2024-01-11T10:00:00Z"
+  },
+  {
+    "id": "task-002",
+    "user_id": "user-001",
+    "title": "Study Control Structures",
+    "description": "Understand if/else, loops, and switch statements",
+    "status": "in_progress",
+    "created_at": "2024-01-11T09:00:00Z",
+    "updated_at": "2024-01-12T14:30:00Z"
+  },
+  {
+    "id": "task-003",
+    "user_id": "user-001",
+    "title": "Practice Functions",
+    "description": "Create and use functions with parameters and return values",
+    "status": "pending",
+    "created_at": "2024-01-12T10:00:00Z",
+    "updated_at": "2024-01-12T10:00:00Z"
+  },
+  {
+    "id": "task-004",
+    "user_id": "user-002",
+    "title": "Build a Simple Website",
+    "description": "Create a website using HTML, CSS, and PHP",
+    "status": "in_progress",
+    "created_at": "2024-01-11T09:30:00Z",
+    "updated_at": "2024-01-12T15:00:00Z"
+  },
+  {
+    "id": "task-005",
+    "user_id": "user-002",
+    "title": "Learn Database Basics",
+    "description": "Understand SQL and how databases work",
+    "status": "pending",
+    "created_at": "2024-01-12T11:00:00Z",
+    "updated_at": "2024-01-12T11:00:00Z"
+  },
+  {
+    "id": "task-006",
+    "user_id": "user-003",
+    "title": "Explore Object-Oriented PHP",
+    "description": "Learn about classes, objects, and inheritance",
+    "status": "pending",
+    "created_at": "2024-01-12T12:00:00Z",
+    "updated_at": "2024-01-12T12:00:00Z"
+  },
+  {
+    "id": "task-007",
+    "user_id": "user-003",
+    "title": "Understand Error Handling",
+    "description": "Study try-catch blocks and error management",
+    "status": "in_progress",
+    "created_at": "2024-01-12T13:00:00Z",
+    "updated_at": "2024-01-12T14:00:00Z"
+  }
+]
